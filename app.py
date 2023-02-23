@@ -163,7 +163,7 @@ def DigitalModulation(dmtype):
 def create_app():
     from waitress import serve
     PORT = os.getenv("PORT")
-    serve(app, host="0.0.0.0", port=PORT)
+    serve(app, host="0.0.0.0")
 
 if __name__ == "__main__":
     create_app()
